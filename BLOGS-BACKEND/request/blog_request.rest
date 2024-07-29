@@ -1,0 +1,26 @@
+GET http://localhost:3001/api/blogs
+
+###
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhaGlyMTYiLCJpZCI6IjY1MzIwMThiZDJkYjhmMmE5NzAzMDYwZiIsImlhdCI6MTY5ODA2ODI5NX0.jMM8vmzpFQy3AQTX1816s9UX06OzHwKZC44OE-7HQuI
+
+{
+    "title": "Tutuna",
+    "author": "samir arteaga",
+    "url": "tutuna-samir.com",
+    "likes": 342,
+    "userId": "6535f6062e0daaa3c6ab4ed0"
+}
+
+###
+DELETE http://localhost:3001/api/blogs/
+6535fb832e0daaa3c6ab4ef9
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhaGlyMTYiLCJpZCI6IjY1MzIwMThiZDJkYjhmMmE5NzAzMDYwZiIsImlhdCI6MTY5ODA2ODI5NX0.jMM8vmzpFQy3AQTX1816s9UX06OzHwKZC44OE-7HQuI
+###
+PUT http://localhost:3001/api/blogs/6535dc1f0636f67ba56ec3c3
+
+{
+    likes: 3
+}

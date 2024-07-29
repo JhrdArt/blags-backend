@@ -1,0 +1,15 @@
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "name": "admin",
+    "password": "admin"
+}
+
+###
+GET http://localhost:3001/api/users 
+
+###
+
+DELETE http://localhost:3001/api/users/652cbed4619d106d0bf55405
